@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Table 셀 병합</h1>
+    <p>Table의 셀들을 병합하기 위해서는 td, th 태그 안에서 속성을 입력해야 한다.</p>
+    <p>셀 병합 속성으로는 다음과 같은 것들이 있다.</p>
+    <ul>
+        <li>rowspan = "n" : 해당 셀을 시작으로 행 방향의 n개 셀을 병합한다.</li>
+        <li>colspan = "n" : 해당 셀을 시작으로 열 방향의 n개 셀을 병합한다.</li>
+    </ul>
+    <table>
+        <caption>셀 병합 테스트</caption>
+        <thead>
+            <tr>
+                <th colspan = "2">1그룹</th>
+                <th colspan = "2">2그룹</th>
+            </tr>
+            <tr>
+                <th>1열</th>
+                <th>2열</th>
+                <th>3열</th>
+                <th>4열</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan = "3">열 방향 3셀 병합</td>
+                <td>미병합</td>
+            </tr>
+            <tr>
+                <td rowspan = "3"> 행<br>방향<br>3셀<br>병합</td>
+                <td rowspan = "3"> 행<br>방향<br>3셀<br>병합</td>
+                <td rowspan = "3"> 행<br>방향<br>3셀<br>병합</td>
+                <td rowspan = "3"> 행<br>방향<br>3셀<br>병합</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
