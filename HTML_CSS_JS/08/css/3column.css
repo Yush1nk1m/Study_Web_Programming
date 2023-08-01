@@ -23,5 +23,22 @@
 }
 
 #contents {
-  width: 
+  width: 800px;
+  height: 600px;
+  background-color: beige;
+  float: left;
+}
+
+#right-sidebar {
+  width: 150px;
+  height: 600px;
+  background-color: antiquewhite;
+  float: left;
+}
+
+#footer {
+  width: 1200px;
+  height: 100px;
+  background-color: #888888;
+  clear: left;
 }
