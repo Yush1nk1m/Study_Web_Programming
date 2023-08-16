@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            border: 1px solid black;
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var numbers = [1, 2, 3, 4, 5];
+        var newNumbers = numbers.splice(2);
+
+        document.write("<p>returned array: " + newNumbers + "<br>");
+        document.write("changed array: " + numbers + "</p>");
+
+        var study = ["html", "css", "web", "jquery"];
+        var newStudy = study.splice(2, 1);
+
+        document.write("<p>returned array: " + newStudy + "<br>");
+        document.write("changed array: " + study + "</p>");
+
+        var newStudy2 = study.splice(2, 1, "js");
+        
+        document.write("<p>retrned array: " + newStudy2 + "<br>");
+        document.write("changed array: " + study + "</p>");
+    </script>
+</body>
+</html>

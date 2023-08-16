@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            border: 1px solid black;
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var numbers = [1, 2, 3];
+        var chars = ['a', 'b', 'c', 'd'];
+
+        var numbers_chars = numbers.concat(chars);
+        var chars_numbers = chars.concat(numbers);
+
+        document.write("<p>numbers concatenate with chars: " + numbers_chars, "<br>chars concatenate with numbers: " + chars_numbers + "</p>");
+
+        var string1 = numbers.join();
+        document.write("<p>without separator: ", string1);
+        document.write("<br>");
+        
+        var string2 = chars.join('/');
+        document.write("'/' separator designated: ", string2);
+        document.write("</p>");
+
+        var ret1 = numbers.push(4, 5);
+        document.write("<p>length: ", ret1, " | array: ", numbers, "<br>");
+
+        var ret2 = numbers.unshift(0);
+        document.write("length: ", ret2, " | array: ", numbers, "<br></p>");
+        
+        var popped1 = chars.pop();
+        document.write("<p>popped element: ", popped1, " | array: ", chars, "<br>");
+
+        var popped2 = chars.shift();
+        document.write("popped element: ", popped2, " | array: ", chars, "<br></p>");
+    </script>
+</body>
+</html>
