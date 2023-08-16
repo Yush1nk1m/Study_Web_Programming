@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/function.css">
+</head>
+<body>
+    <button id="change">글자색 바꾸기</button>
+    <p>Hello my name is Yushin Kim and I'm studying 3 majors, Psychology, Computer science & engineering and Artificial intelligence.</p>
+
+    <script>
+        /* 방법 1
+        var changeBttn = document.querySelector("#change");
+        changeBttn.onclick = changeColor;
+
+        function changeColor() {
+            document.querySelector("p").style.color = "#f00";
+        }
+        */
+        
+        /* 방법 2
+        document.querySelector("#change").onclick = changeColor;
+
+        function changeColor() {
+            document.querySelector("p").style.color = "#f00";
+        }
+        */
+
+        document.querySelector("#change").onclick = function() {
+            document.querySelector("p").style.color = "#f00";
+        }
+        
+    </script>
+</body>
+</html>

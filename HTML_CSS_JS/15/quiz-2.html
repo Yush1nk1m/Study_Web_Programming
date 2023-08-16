@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function comp() {
+            let x = prompt("비교할 첫 번째 숫자");
+            let y = prompt("비교할 두 번째 숫자");
+
+            if (x !== null && y !== null) {
+                if (x === y) {
+                    alert("같습니다.");
+                }
+                else {
+                    (x > y) ? alert(x + "(이)가 " + y + "보다 큽니다.") : alert(y + "(이)가 " + x + "보다 큽니다.");
+                }
+            }
+        }
+
+        comp();
+    </script>
+</body>
+</html>
