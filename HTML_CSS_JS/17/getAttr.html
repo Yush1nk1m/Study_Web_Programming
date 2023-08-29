@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="prod-pic">
+        <img src="images/coffee-pink.jpg" alt="에디오피아 게뎁" id="cup" width="200" height="200" onclick="displaySrc()">
+    </div>
+
+    <script>
+        function displaySrc() {
+            var cup = document.querySelector("#cup");       // access to the element with id="cup"
+            alert("Image source: " + cup.getAttribute("src"));      // alert the attribute of cup
+        }
+    </script>
+</body>
+</html>

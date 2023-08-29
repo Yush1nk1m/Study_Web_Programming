@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="inntext()">Display with innerText</button>
+    <button onclick="innhtml()">Display with innerHTML</button>
+    <h1>Current time: </h1>
+    <div id="current"></div>
+
+    <script>
+        var now = new Date();
+
+        function inntext() {
+            document.getElementById("current").innerText = now;
+        }
+
+        function innhtml() {
+            document.getElementById("current").innerHTML = "<em>" + now + "</em>";
+        }
+    </script>
+</body>
+</html>
